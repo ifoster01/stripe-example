@@ -13,11 +13,11 @@ export async function POST() {
       line_items: [
         {
           // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-          price: '{{PRICE_ID}}',
+          price: 'price_1QrRSuD7QliVoafY7UTJIph6',
           quantity: 1,
         },
       ],
-      mode: 'payment',
+      mode: 'subscription',
       success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/?canceled=true`,
     });
