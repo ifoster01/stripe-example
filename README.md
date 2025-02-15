@@ -27,6 +27,11 @@ $ STRIPE_WEBHOOK_SECRET=$(stripe listen --print-secret) npm run dev
 
 4. Go to [localhost:3000](http://localhost:3000)
 
+5. Test the webhook
+~~~shell
+$ stripe trigger customer.subscription.updated
+~~~
+
 ### Production
 
 1. Build the application
